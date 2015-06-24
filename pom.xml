@@ -13,11 +13,11 @@
 	<properties>
 		<start-class>org.opencommunity.CommunityApplication</start-class>
 		<java.version>1.6</java.version>		
-		<packaging>war</packaging>
-		<scope>provided</scope>
+		<!--packaging>war</packaging>
+		<scope>provided</scope-->
 		
-		<!--packaging>jar</packaging>
-		<scope>compile</scope-->		
+		<packaging>jar</packaging>
+		<scope>compile</scope>		
 	</properties>
 	
 	<packaging>${packaging}</packaging>
