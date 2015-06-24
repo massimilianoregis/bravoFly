@@ -35,7 +35,7 @@ public class BasicTest {
 		index.addCosmetic("CO2","perfum",27.99D,"IT");
 		index.addCosmetic("CO3","perfum",18.99D,"CH");
 		index.addMedical("MD1","pills",9.75D,"CH");
-		index.addFood("CH3","chocolate",11.25D,"IT");
+		index.addFood("CH3","chocolate",11.25D,"IT");		
 		}
 	@Test
 	public void test1()
@@ -62,7 +62,7 @@ public class BasicTest {
 		Assert.assertEquals(54.65D,basket.getRows().get(1).getTotalWithTax().getValue());
 		
 		Assert.assertEquals(7.65D,basket.getTax().getValue());
-		Assert.assertEquals(65.15D,basket.getTotalWithTax().getValue());
+		Assert.assertEquals(65.15D,basket.getTotalWithTax().getValue());		
 		}
 	
 	@Test

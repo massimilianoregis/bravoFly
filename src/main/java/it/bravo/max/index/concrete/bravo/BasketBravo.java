@@ -12,9 +12,7 @@ import it.bravo.max.index.concrete.Eur;
 /**
  * 
  * @author max
- * This is a specific 'Bravo' basket that contains the custum Business logic
- * In the specific the BL is contained in the Row class in the complex real case
- * is possible to move into external command pattern 
+ * This is a specific 'Bravo' basket that contains the custum Business logic 
  */
 public class BasketBravo implements Basket{
 	
@@ -37,7 +35,6 @@ public class BasketBravo implements Basket{
 	@Override
 	public void add(Good good) {
 		rows.add(new RowBravo(this,good));
-		System.out.println(rows);
 	}
 	@Override
 	public Money getTax() {
@@ -52,6 +49,11 @@ public class BasketBravo implements Basket{
 		for(Row item:rows)
 			total= total.add(item.getTotal());
 		return total;
+	}
+	
+	@Override
+	public String toString() {	
+		return getRows().toString()+" "+getTotalWithTax();
 	}
 	@Override
 	public Money getTotalWithTax() {

@@ -13,7 +13,6 @@ public class IndexMemory implements Index {
 	private List<Good> goods = new ArrayList<Good>();
 	@Override
 	public Good getGood(String id) {
-		System.out.println(goods);
 		return goods.get(goods.indexOf(new GoodFinder(id)));
 	}
 
@@ -43,7 +42,6 @@ public class IndexMemory implements Index {
 	}
 	public void addGood(Good good)	{
 		this.goods.add(good);
-		System.out.println(this.goods);
 	}
 	@Override
 	public void addMedical(String id, String name, Double money, String madein) {
